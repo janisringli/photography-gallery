@@ -32,7 +32,54 @@
     position: relative;
     z-index: 2;
 }
-
+/* @media only screen and (max-width: 1100px) {
+    .greeting{
+        font-size: 70px;
+    }
+    .intro-photo{
+        width: 125px;
+        height: auto;
+       
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .greeting{
+        font-size: 60px;
+    }
+    .intro-photo{
+        right: -52px;
+        top: -12px;
+        width: 100px;
+        height: auto;
+       
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .greeting{
+        font-size: 40px;
+    }
+    .intro-photo{
+        right: -52px;
+        top: -12px;
+        width: 70px;
+        height: auto;
+       
+    }
+    
+  } */
+  @media only screen and (max-width: 550px) {
+    .greeting{
+        font-size: 45px;
+    }
+    .intro-photo{
+        rotate: 0deg;
+        right: 90px;
+        top: -145px;
+        width: 120px;
+        height: auto;
+       
+    }
+}
 @media only screen and (max-width: 400px) {
     .greeting{
         font-size: 37px;
