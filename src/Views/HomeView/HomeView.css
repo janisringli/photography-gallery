@@ -5,25 +5,44 @@
 .greeting{
     font-size: 80px;
     text-align: center;
+    width: 100vw;
+    
 }
 .homeView-content{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 95vh;
+    
 }
 .greetings-container{
     position: relative;
+
 }
 .intro-photo{
     position: absolute;
     rotate: 20deg;
     right: -74px;
-    top: -12px;
+    top: -36px;
     width: 150px;
     height: 225px;
-    z-index: 999999;
+   
 }
 .image-overlap{
-    z-index: 0;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 400px) {
+    .greeting{
+        font-size: 37px;
+    }
+    .intro-photo{
+        rotate: 0deg;
+        right: 60px;
+        top: -123px;
+        width: 100px;
+        height: auto;
+       
+    }
 }
