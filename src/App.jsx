@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-function MouseTracker() {
+function App() {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [dotCoords, setDotCoords] = useState({ x: 0, y: 0 });
   const [isMoving, setIsMoving] = useState(false);
@@ -57,4 +57,4 @@ function MouseTracker() {
   );
 }
 
-export default MouseTracker;
+export default App;
