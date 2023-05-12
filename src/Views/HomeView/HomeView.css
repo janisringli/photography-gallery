@@ -1,0 +1,29 @@
+.homeView-container{
+    height: 100vh;
+    background-color: var(--mainBackground);
+}
+.greeting{
+    font-size: 80px;
+    text-align: center;
+}
+.homeView-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+.greetings-container{
+    position: relative;
+}
+.intro-photo{
+    position: absolute;
+    rotate: 20deg;
+    right: -74px;
+    top: -12px;
+    width: 150px;
+    height: 225px;
+    z-index: 999999;
+}
+.image-overlap{
+    z-index: 0;
+}
