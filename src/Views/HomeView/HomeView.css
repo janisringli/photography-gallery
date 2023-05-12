@@ -54,19 +54,19 @@
        
     }
   }
+   */
   @media only screen and (max-width: 750px) {
     .greeting{
-        font-size: 40px;
+        font-size: 50px;
     }
     .intro-photo{
-        right: -52px;
-        top: -12px;
-        width: 70px;
+        right: 65px;
+        top: -36px;
+        width: 100px;
         height: auto;
-       
     }
     
-  } */
+  }
   @media only screen and (max-width: 550px) {
     .greeting{
         font-size: 45px;
