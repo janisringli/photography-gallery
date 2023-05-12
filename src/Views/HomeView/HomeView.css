@@ -32,29 +32,20 @@
     position: relative;
     z-index: 2;
 }
-/* @media only screen and (max-width: 1100px) {
-    .greeting{
-        font-size: 70px;
-    }
-    .intro-photo{
-        width: 125px;
-        height: auto;
-       
-    }
-  }
   @media only screen and (max-width: 900px) {
     .greeting{
         font-size: 60px;
     }
     .intro-photo{
-        right: -52px;
-        top: -12px;
-        width: 100px;
+        rotate: 10deg;
+        right: 65px;
+        top: -130px;
+        width: 150px;
         height: auto;
        
     }
   }
-   */
+   
   @media only screen and (max-width: 750px) {
     .greeting{
         font-size: 50px;
