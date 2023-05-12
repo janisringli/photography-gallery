@@ -1,0 +1,16 @@
+.header-wrapper{
+    background-color: var(--mainBackground);
+    height: 5vh;
+    padding:  0 46px 0 46px;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu-icon{
+    height: 25px;
+    width: 25px;
+}
