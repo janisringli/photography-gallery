@@ -1,7 +1,7 @@
 .header-wrapper{
     background-color: var(--mainBackground);
     height: 5vh;
-    padding:  0 46px 0 46px;
+    /* padding:  0 46px 0 46px; */
 }
 .header-content{
     display: flex;
