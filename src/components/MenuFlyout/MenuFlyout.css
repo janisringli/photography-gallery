@@ -50,7 +50,8 @@
     gap: 60px;
 }
 .flyout-menu-icon{
-    padding-top: 30px;
+    padding-top: 25px;
+    width: 25px;
 }
 .menu-close{
     padding-bottom: 30px;
