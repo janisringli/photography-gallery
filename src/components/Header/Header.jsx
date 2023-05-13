@@ -1,5 +1,5 @@
 import "./Header.css"
-import menuIcon from "../../../assets/svg/list.svg"
+import menuIcon from "../../assets/svg/list.svg"
 
 function Header(props){
     return (

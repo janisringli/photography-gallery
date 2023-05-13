@@ -1,5 +1,5 @@
 import "./HomeView.css"
-import Header from "../components/Header/Header.jsx"
+import Header from "../../components/Header/Header.jsx"
 import janis from "../../assets/images/janis1.jpg"
 
 function HomeView(){
