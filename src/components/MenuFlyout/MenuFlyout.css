@@ -1,0 +1,27 @@
+.menuFlyout-wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+   top: 0px;
+    /* display: none; */
+
+}
+.menuFlyout-content{
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    left: 30%;
+    top: 0px;
+    background-color: gray;
+    z-index: 99;
+}
+.menuFlyout-container{
+    display: flex;
+    flex-direction: row;
+}
+.menuFlyout-overlay-blur{
+    width: 30vw;
+    height: 100vh;
+    z-index: 99;
+    backdrop-filter: blur(3px);
+}
