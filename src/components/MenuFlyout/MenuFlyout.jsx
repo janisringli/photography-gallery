@@ -1,14 +1,14 @@
 import "./MenuFlyout.css"
 import Menu from "../../assets/svg/list.svg"
 
-function MenuFlyout(){
+function MenuFlyout({ menuFlyoutWrapperRef }){
 
    function closeFlyout(){
         const flyout = document.querySelector('.menuFlyout-wrapper')
         flyout.style.display = "none"
     }
     return(
-        <div className="menuFlyout-wrapper">
+        <div className="menuFlyout-wrapper" ref={menuFlyoutWrapperRef}>
             <div className="menuFlyout-container">
             <div className="menuFlyout-content">
                     <ul className="nav-content">
@@ -17,7 +17,7 @@ function MenuFlyout(){
                         <li className="nav-item">Photography</li>
                     </ul>
                     <div className="flyout-sidebar">
-                        <img className="flyout-menu-icon" onClick={closeFlyout} src={Menu} alt="" />
+                        <img className="flyout-menu-icon" onClick={closeFlyout}src={Menu} alt="" />
                         <div className="menu-close" onClick={closeFlyout}>Close</div>
                     </div>
             </div>
