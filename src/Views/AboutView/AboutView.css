@@ -1,0 +1,45 @@
+.about-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+}
+.social-icon{
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title-section{
+    width: 30vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+.about-title{
+    width: 100%;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    bottom: 70px;
+    width: 30vw;
+}
+.main-section{
+    width: 70vw;
+    height: 95vh;
+}
+@media only screen and (max-width: 400px) {
+    .footer{
+        position: fixed;
+        bottom: 70px;
+        width: 100vw;
+    }
+}

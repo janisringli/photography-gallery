@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeView from "./Views/HomeView/HomeView.jsx";
+import AboutView from "./Views/AboutView/AboutView.jsx";
 
 function App() {
-
   return (
-    <div className="app-container" >
-      <HomeView></HomeView>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path="/about" element={<AboutView />} />
+          <Route path='/' element={<HomeView />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
