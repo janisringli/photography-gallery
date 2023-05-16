@@ -1,5 +1,5 @@
 .header-wrapper{
-    background-color: var(--mainBackground);
+    background-color: transparent;
     height: 5vh;
     /* padding:  0 46px 0 46px; */
 }
