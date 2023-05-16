@@ -39,6 +39,10 @@
     font-size: 96px;
     text-align: end;
 }
+.nav-item a{
+    text-decoration: none;
+    color: inherit;
+}
 .flyout-sidebar{
     width: 5vw;
     height: 100vh;
