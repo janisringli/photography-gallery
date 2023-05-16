@@ -12,6 +12,8 @@ function MenuFlyout({ menuFlyoutWrapperRef }){
             <div className="menuFlyout-container">
             <div className="menuFlyout-content">
                     <ul className="nav-content">
+                    <li className="nav-item"> <a href="/">Home</a></li>
+
                         <li className="nav-item"> <a href="/about">About</a> </li>
                         <li className="nav-item">Projects</li>
                         <li className="nav-item">Photography</li>
