@@ -1,0 +1,130 @@
+.homeView-container{
+    height: 100vh;
+    background-color: var(--mainBackground);
+}
+.greeting{
+    font-size: 80px;
+    text-align: center;
+    width: 100vw;
+    
+}
+.homeView-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    
+}
+.greetings-container{
+    position: relative;
+
+}
+.intro-photo{
+    position: absolute;
+    rotate: 10deg;
+    right: 280px;
+    top: -130px;
+    width: 180px;
+    height: auto;
+   
+}
+.image-overlap{
+    position: relative;
+    z-index: 2;
+}
+@media only screen and (min-width: 1441px) {
+    .greeting{
+        font-size: 80px;
+        text-align: center;
+        width: auto;
+    }
+    .greeting{
+        font-size: 70px;
+    }
+    .intro-photo{
+     rotate: 10deg;
+     right: -60px;
+     top: -155px;
+     width: 175px;
+     height: auto;
+    
+ }
+  }
+@media only screen and (max-width: 1300px) {
+    .greeting{
+        font-size: 70px;
+    }
+    .intro-photo{
+     rotate: 10deg;
+     right: 225px;
+     top: -155px;
+     width: 175px;
+     height: auto;
+    
+ }
+  }
+@media only screen and (max-width: 1100px) {
+   .greeting{
+       font-size: 70px;
+   }
+   .intro-photo{
+    rotate: 10deg;
+    right: 138px;
+    top: -125px;
+    width: 150px;
+    height: auto;
+   
+}
+ }
+  @media only screen and (max-width: 900px) {
+    .greeting{
+        font-size: 60px;
+    }
+    .intro-photo{
+        rotate: 10deg;
+        right: 65px;
+        top: -130px;
+        width: 150px;
+        height: auto;
+       
+    }
+  }
+   
+  @media only screen and (max-width: 750px) {
+    .greeting{
+        font-size: 50px;
+    }
+    .intro-photo{
+        right: 65px;
+        top: -36px;
+        width: 100px;
+        height: auto;
+    }
+    
+  }
+  @media only screen and (max-width: 550px) {
+    .greeting{
+        font-size: 45px;
+    }
+    .intro-photo{
+        rotate: 0deg;
+        right: 90px;
+        top: -145px;
+        width: 120px;
+        height: auto;
+       
+    }
+}
+@media only screen and (max-width: 400px) {
+    .greeting{
+        font-size: 37px;
+    }
+    .intro-photo{
+        rotate: 0deg;
+        right: 60px;
+        top: -123px;
+        width: 100px;
+        height: auto;
+       
+    }
+}
