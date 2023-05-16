@@ -16,10 +16,10 @@ function AboutView(){
                 <div className="about-title">About</div>
                 <div className="footer">
                     <div className="socials">
-                        <div className="social-item"> <img className="social-icon" src={instaIcon} alt="" /> </div>
-                        <div className="social-item"> <img className="social-icon" src={githubIcon} alt="" /></div> 
-                        <div className="social-item"><img className="social-icon" src={unsplashIcon} alt="" /></div>
-                        <div className="social-item"><img className="social-icon" src={twitterIcon} alt="" /></div>
+                        <div className="social-item"> <a href="https://www.instagram.com/ring.lii/" target="_blank"><img className="social-icon" src={instaIcon} alt="" /></a>  </div>
+                        <div className="social-item"> <a href="https://github.com/janisringli" target="_blank"> <img className="social-icon" src={githubIcon} alt="" /></a></div> 
+                        <div className="social-item"> <a href="https://unsplash.com/@janisringli" target="_blank"><img className="social-icon" src={unsplashIcon} alt="" /></a></div>
+                        {/* <div className="social-item"> <a href="" target="_blank"><img className="social-icon" src={twitterIcon} alt="" /></a></div> */}
                     </div>
                 </div>
             </div>
