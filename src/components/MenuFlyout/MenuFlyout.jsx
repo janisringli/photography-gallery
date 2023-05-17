@@ -1,5 +1,7 @@
 import "./MenuFlyout.css"
 import Menu from "../../assets/svg/list.svg"
+import Close from "../../assets/svg/x.svg"
+
 
 function MenuFlyout({ menuFlyoutWrapperRef }){
 
@@ -21,6 +23,7 @@ function MenuFlyout({ menuFlyoutWrapperRef }){
                     <div className="flyout-sidebar">
                         <img className="flyout-menu-icon" onClick={closeFlyout}src={Menu} alt="" />
                         <div className="menu-close" onClick={closeFlyout}>Close</div>
+                        <img className="close-mobile" src={Close} onClick={closeFlyout} alt="" />
                     </div>
             </div>
             <div className="menuFlyout-overlay-blur" onClick={closeFlyout}></div>
