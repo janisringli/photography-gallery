@@ -13,16 +13,14 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
         <div className="menuFlyout-content">
           <ul className="nav-content">
             <li className="nav-item">
-              {" "}
+              
               <a href="/">Home</a>
             </li>
-
             <li className="nav-item">
-              {" "}
-              <a href="/about">About</a>{" "}
+              <a href="/about">About</a>
             </li>
             <li className="nav-item">Projects</li>
-            <li className="nav-item">Photography</li>
+            <li className="nav-item"><a href="/photogallery">Photography</a></li>
           </ul>
           <div className="flyout-sidebar">
             <img
