@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeView from "./Views/HomeView/HomeView.jsx";
 import AboutView from "./Views/AboutView/AboutView.jsx";
 
@@ -9,7 +8,7 @@ function App() {
       <div className="app-container">
         <Routes>
           <Route path="/about" element={<AboutView />} />
-          <Route path='/' element={<HomeView />} />
+          <Route path="/" element={<HomeView />} />
         </Routes>
       </div>
     </Router>

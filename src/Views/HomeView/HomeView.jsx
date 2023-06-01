@@ -5,13 +5,12 @@ import MenuFlyout from "../../components/MenuFlyout/MenuFlyout";
 
 function HomeView() {
   return (
-    
     <div className="homeView-container">
       <Header title="Home" />
       <div className="homeView-content">
         <div className="greetings-container">
           <div className="greeting">
-            <p className="image-overlap">Hello There,</p>
+            <p className="image-overlap">Hello there,</p>
             I'm Janis Ring
             <span className="image-overlap">li</span>
             <img class="intro-photo" src={janis} alt="" />
