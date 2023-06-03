@@ -36,15 +36,7 @@
 .main-image-container{
     height: calc(55vh - 19px);
 }
-.description-title{
-    font-size: 96px;
-    writing-mode: vertical-rl;
-    rotate: 180deg;
-    height: 100%;
-    line-height: 103px;
-padding-right: 28px;
-text-align: center;
-}
+
 .description-text{
     padding-right: 28px;
     width: 50%;
@@ -53,56 +45,13 @@ text-align: center;
     overflow: scroll;
 margin-bottom: 30px;
 }
-.description-container{
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
+
 .main-image-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-@media only screen and (max-width: 1000px) {
-    .description-title{
-        font-size: 80px;
-        writing-mode: vertical-rl;
-        rotate: 180deg;
-        height: 100%;
-        line-height: 103px;
-    padding-right: 20px;
-    }
-    .description-text{
-        padding-right: 20px;
-        width: 50%;
-        text-align: justify;
-        margin-top: 30px;
-    
-    }
-}
 @media only screen and (max-width: 900px) {
-    
-    .description-title{
-        font-size: 80px;
-        writing-mode: vertical-rl;
-        rotate: 180deg;
-        height: 80%;
-        line-height: 103px;
-    padding-right: 50px;
-
-
-    }
-    .description-text{
-        padding-right: 50px;
-        width: 50%;
-        text-align: justify;
-        margin-top: 30px;
-        margin-bottom: 90px;
-    
-    }
     
     .main-section{
         width: 100vw;
@@ -113,23 +62,6 @@ margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 600px) {
-    .description-title{
-        font-size: 60px;
-        writing-mode: vertical-rl;
-        rotate: 180deg;
-        height: 80%;
-        line-height: 72px;
-    padding-right: 50px;
-
-
-    }
-    .description-text{
-        padding-right: 50px;
-        width: 50%;
-        text-align: justify;
-        margin-top: 30px;
-    
-    }
     .main-section{
         width: 100vw;
         height: 95vh;
@@ -183,29 +115,5 @@ margin-bottom: 30px;
     }
     .main-image-container{
         height: calc(40vh - 19px);
-    }
-}
-@media only screen and (max-width: 400px) {
-    .footer{
-        position: fixed;
-        bottom: 70px;
-        width: 100vw;
-    }
-    .description-title{
-        font-size: 40px;
-        writing-mode: vertical-rl;
-        rotate: 180deg;
-        height: 80%;
-        line-height:45px;
-    padding-right: 20px;
-
-
-    }
-    .description-text{
-        padding-right: 50px;
-        width: 50%;
-        text-align: justify;
-        margin-top: 20px;
-    
     }
 }
