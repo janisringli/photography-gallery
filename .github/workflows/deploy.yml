@@ -1,0 +1,28 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+          cache: "npm"
+      - name: Build
+        run: |
+          npm install
+          npm run build
+      - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          local-dir: ./dist/
+          server-dir: ./janisringli.ch/
+          state-name: .htsync
+          server: sl203.web.hostpoint.ch
+          port: 21
+          username: git@janisringli.ch
+          password: ${{ secrets.FTP_PASSWORD }}
