@@ -10,7 +10,7 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
 
   document.onkeydown = function(evt) {
     evt = evt || window.event;
-    if (evt.keyCode == 27) {
+    if (evt.key === "Escape") {
         closeFlyout()
     }
 };
