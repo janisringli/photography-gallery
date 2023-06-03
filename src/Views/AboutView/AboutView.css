@@ -17,23 +17,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.title-section{
-    width: 30vw;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-}
-.about-title{
-    width: 100%;
-    text-align: center;
-    font-size: 96px;
-    padding-top: 98px;
-}
-.footer{
-    position: fixed;
-    bottom: 70px;
-    width: 30vw;
-}
+
 .main-section{
     width: 65vw;
     height: 95vh;
@@ -83,9 +67,6 @@ margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 1000px) {
-    .about-title{
-        font-size: 80px;
-    }
     .description-title{
         font-size: 80px;
         writing-mode: vertical-rl;
@@ -103,10 +84,7 @@ margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 900px) {
-    .about-title{
-        font-size: 80px;
-        display: none;
-    }
+    
     .description-title{
         font-size: 80px;
         writing-mode: vertical-rl;
@@ -125,17 +103,7 @@ margin-bottom: 30px;
         margin-bottom: 90px;
     
     }
-    .footer{
-        position: fixed;
-        bottom: 30px;
-        width: 100vw;
-    }
-    .title-section{
-        width: 0vw;
-        height: 95vh;
-        display: flex;
-        flex-direction: column;
-    }
+    
     .main-section{
         width: 100vw;
         height: 95vh;
@@ -145,10 +113,6 @@ margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 600px) {
-    .about-title{
-        font-size: 80px;
-        display: none;
-    }
     .description-title{
         font-size: 60px;
         writing-mode: vertical-rl;
@@ -165,17 +129,6 @@ margin-bottom: 30px;
         text-align: justify;
         margin-top: 30px;
     
-    }
-    .footer{
-        position: fixed;
-        bottom: 30px;
-        width: 100vw;
-    }
-    .title-section{
-        width: 0vw;
-        height: 95vh;
-        display: flex;
-        flex-direction: column;
     }
     .main-section{
         width: 100vw;
@@ -195,10 +148,6 @@ margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 500px) {
-    .about-title{
-        font-size: 80px;
-        display: none;
-    }
     .description-title{
         font-size: 52px;
         writing-mode: vertical-rl;
@@ -215,17 +164,6 @@ margin-bottom: 30px;
         text-align: justify;
         margin-top: 20px;
     
-    }
-    .footer{
-        position: fixed;
-        bottom: 30px;
-        width: 100vw;
-    }
-    .title-section{
-        width: 0vw;
-        height: 95vh;
-        display: flex;
-        flex-direction: column;
     }
     .main-section{
         width: 100vw;
