@@ -7,6 +7,14 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
     const flyout = document.querySelector(".menuFlyout-wrapper");
     flyout.style.display = "none";
   }
+
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        closeFlyout()
+    }
+};
+
   return (
     <div className="menuFlyout-wrapper" ref={menuFlyoutWrapperRef}>
       <div className="menuFlyout-container">
