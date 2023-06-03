@@ -1,0 +1,111 @@
+.description-container{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.description-title{
+    font-size: 96px;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    height: 100%;
+    line-height: 103px;
+padding-right: 28px;
+text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+    .description-title{
+        font-size: 80px;
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        height: 100%;
+        line-height: 103px;
+    padding-right: 20px;
+    }
+    .description-text{
+        padding-right: 20px;
+        width: 50%;
+        text-align: justify;
+        margin-top: 30px;
+    
+    }
+}
+@media only screen and (max-width: 900px) {
+    
+    .description-title{
+        font-size: 80px;
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        height: 80%;
+        line-height: 103px;
+    padding-right: 50px;
+
+
+    }
+    .description-text{
+        padding-right: 50px;
+        width: 50%;
+        text-align: justify;
+        margin-top: 30px;
+        margin-bottom: 90px;
+    
+    }
+}
+@media only screen and (max-width: 600px) {
+    .description-title{
+        font-size: 60px;
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        height: 80%;
+        line-height: 72px;
+    padding-right: 50px;
+
+
+    }
+    .description-text{
+        padding-right: 50px;
+        width: 50%;
+        text-align: justify;
+        margin-top: 30px;
+    
+    }
+}
+@media only screen and (max-width: 500px) {
+    .description-title{
+        font-size: 52px;
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        height: 80%;
+        line-height: 60px;
+    padding-right: 20px;
+
+
+    }
+    .description-text{
+        padding-right: 50px;
+        width: 50%;
+        text-align: justify;
+        margin-top: 20px;
+    
+    }
+}
+@media only screen and (max-width: 400px) {
+    .description-title{
+        font-size: 40px;
+        writing-mode: vertical-rl;
+        rotate: 180deg;
+        height: 80%;
+        line-height:45px;
+    padding-right: 20px;
+
+
+    }
+    .description-text{
+        padding-right: 50px;
+        width: 50%;
+        text-align: justify;
+        margin-top: 20px;
+    
+    }
+}
