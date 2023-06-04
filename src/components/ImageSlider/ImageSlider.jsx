@@ -21,6 +21,9 @@ function ImageSlider(props) {
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
+  const goToImage = (index) => {
+    setCurrentIndex(index);
+  };
   return (
     <div className="image-slider-container">
       <div className="image-chevron" onClick={previousImage}>
@@ -29,17 +32,18 @@ function ImageSlider(props) {
 
       <div className="slider-main-container">
       <img className="slider-main-image" src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      
+      </div>
       <div className="indicators">
           {images.map((_, index) => (
             <div
               key={index}
               className={`indicator-dot ${index === currentIndex ? "active" : ""}`}
               style={{ width: index === currentIndex ? "30px" : "10px" }} // Adjust the width as needed
+              onClick={() => goToImage(index)}
             ></div>
           ))}
         </div>
-      </div>
-
       <div className="image-chevron" onClick={nextImage}>
         <img src={chevronRight} alt="Next" />
       </div>

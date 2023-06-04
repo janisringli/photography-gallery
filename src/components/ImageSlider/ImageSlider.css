@@ -28,12 +28,13 @@
 }
 .indicators{
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    justify-self: center;
     width: 100%;
 }
 .indicator-dot{
@@ -53,4 +54,7 @@
 .image-chevron:hover{
     cursor: pointer;
 
+}
+.indicator-dot:hover{
+    cursor: pointer;
 }
