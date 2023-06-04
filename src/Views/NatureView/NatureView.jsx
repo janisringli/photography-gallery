@@ -7,8 +7,24 @@ import janis2 from "../../assets/images/janis2.jpg";
 import mailIcon from "../../assets/svg/mail.svg";
 import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
 import DiscriptionBox from "../../components/DiscriptionBox/DiscriptionBox";
+import Image1 from "../../assets/images/gallery/DJI_0281.jpg" 
+import Image2 from "../../assets/images/gallery/7S0A0447.jpg"
+
+import Image3 from "../../assets/images/7S0A0502.jpg"
+
+
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
+
+
+
 
 function NatureView() {
+    
+    const imageUrls = [
+        Image1,
+        Image2,
+        Image3
+    ]
   return (
     <div className="about-wrapper">
       <Header title="" />
@@ -16,9 +32,7 @@ function NatureView() {
        <SidebarTitle title="Nature" />
         <div className="main-section">
           <div className="main-header"></div>
-          <div className="main-image-container">
-            <img className="main-image" src="" alt="" />
-          </div>
+          <ImageSlider images={imageUrls}></ImageSlider>
           <DiscriptionBox content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nisi
         dolorem consectetur qui explicabo aliquam, nesciunt voluptates doloribus
         quia. Nulla voluptate perferendis sequi culpa laborum iste similique
