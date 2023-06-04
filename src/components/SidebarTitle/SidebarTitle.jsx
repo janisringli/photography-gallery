@@ -1,8 +1,8 @@
 import "./SidebarTitle.css"
-function SidebarTitle(){
+function SidebarTitle(props){
     return (
         <div className="title-section">
-          <div className="about-title">About</div>
+          <div className="about-title">{props.title}</div>
           <div className="footer">
            
           </div>

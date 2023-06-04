@@ -8,12 +8,12 @@ import mailIcon from "../../assets/svg/mail.svg";
 import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
 import DiscriptionBox from "../../components/DiscriptionBox/DiscriptionBox";
 
-function AboutView() {
+function NatureView() {
   return (
     <div className="about-wrapper">
       <Header title="" />
       <div className="about-content">
-       <SidebarTitle></SidebarTitle>
+       <SidebarTitle title="Nature" />
         <div className="main-section">
           <div className="main-header"></div>
           <div className="main-image-container">
@@ -35,4 +35,4 @@ function AboutView() {
     </div>
   );
 }
-export default AboutView;
+export default NatureView;
