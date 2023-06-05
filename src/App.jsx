@@ -9,7 +9,7 @@ function App() {
       <div className="app-container">
         <Routes>
           <Route path="/about" element={<AboutView />} />
-          <Route path="/home" element={<HomeView />} />
+          <Route path="/" element={<HomeView />} />
           <Route path='/photogallery' element={<PhotoGalleryView />} />
         </Routes>
       </div>
