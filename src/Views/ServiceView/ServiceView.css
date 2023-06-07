@@ -1,0 +1,68 @@
+.service-container {
+  background-color: var(--mainBackground);
+  height: 100vh;
+  height: 100svh;
+}
+.service-content {
+  height: 100%;
+}
+.features-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+.feature-item {
+  background-image: url("../../assets/svg/check.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  text-align: center;
+  width: fit-content;
+}
+.card-container {
+  border-radius: 16px;
+  height: 650px;
+  width: 443px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.image-header {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.chosen {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+.chosePack {
+  display: flex;
+  border: #000000 4px solid;
+  height: 50px;
+  width: 200px;
+  margin-top: 170px;
+}
+.chosen:hover {
+  cursor: pointer;
+}
