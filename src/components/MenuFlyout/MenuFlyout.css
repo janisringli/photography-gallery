@@ -81,8 +81,28 @@
 }
 .dev-info {
   position: absolute;
-  bottom: 40px;
+  bottom: 100px;
   left: 60px;
+}
+.flyout-footer {
+  color: #000000;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  border-top: 4px soild grey;
+  left: 0px;
+  gap: 20px;
+  justify-content: space-around;
+  width: 55vw;
+  text-decoration: none;
+}
+.flyout-footer a {
+  text-decoration: inherit;
+  color: inherit;
+}
+.flyout-footer a:hover {
+  text-decoration: underline;
 }
 .info-list {
   list-style: none;
