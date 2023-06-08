@@ -18,8 +18,8 @@ function App() {
           <Route path="/photogallery" element={<PhotoGalleryView />} />
           <Route path="/photo/nature/" element={<NatureView />} />
           <Route path="/photo/flowers/" element={<FlowersView />} />
-          <Route path="/impressum" element={<ImpressumView />} />
-          <Route path="/datenschutz" element={<DatenschutzView />} />
+          <Route path="/datenschutz" element={<ImpressumView />} />
+          <Route path="/impressum" element={<DatenschutzView />} />
           <Route path="/service" element={<ServiceView />} />
         </Routes>
       </div>
