@@ -15,7 +15,7 @@ function ServiceView() {
               <div className="card-title">Photography Pack</div>
               <ul className="features-list">
                 <li className="feature-item">2h Photoshooting</li>
-                <li className="feature-item">All Photos at your desposal</li>
+                <li className="feature-item">All Photos at your disposal</li>
                 <li className="feature-item">Best Quality</li>
                 <li className="feature-item"></li>
               </ul>
@@ -37,7 +37,7 @@ function ServiceView() {
               <div className="card-title">Areal Pack</div>
               <ul className="features-list">
                 <li className="feature-item">Drone Photoshoot</li>
-                <li className="feature-item">All Photos at your desposal</li>
+                <li className="feature-item">All Photos at your disposal</li>
                 <li className="feature-item"></li>
                 <li className="feature-item"></li>
               </ul>
