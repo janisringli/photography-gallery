@@ -58,17 +58,13 @@ function AboutView() {
           <div className="main-image-container">
             <img className="main-image" src={janis2} alt="" />
           </div>
-          <DiscriptionBox content=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nisi
-        dolorem consectetur qui explicabo aliquam, nesciunt voluptates doloribus
-        quia. Nulla voluptate perferendis sequi culpa laborum iste similique
-        dolorem voluptatum quaerat. Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Atque nisi dolorem consectetur qui explicabo aliquam,
-        nesciunt voluptates doloribus quia. Nulla voluptate perferendis sequi
-        culpa laborum iste similique dolorem voluptatum quaerat. Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Atque nisi dolorem
-        consectetur qui explicabo aliquam, nesciunt voluptates doloribus quia.
-        Nulla voluptate perferendis sequi culpa laborum iste similique dolorem
-        voluptatum quaerat."></DiscriptionBox>
+          <DiscriptionBox
+            content=" I'm Janis, a passionate photographer who has embarked on an incredible journey to capture the beauty and essence of the world through my lens. Photography is not just a hobby for me; it's a way of life—a means to express my creativity and share my unique perspective with others. This website is the result of countless hours spent chasing the perfect shot, honing my skills, and pouring my heart and soul into each frame. I created this platform to showcase my photography and invite you to join me on this visual adventure. Through my lens, I strive to capture moments that tell stories—moments filled with raw emotions, hidden details, and breathtaking beauty. Whether it's the vibrant colors of a stunning sunset, the candid expressions of a street scene, or the intricate patterns of nature, each photograph holds a tale waiting to be discovered.
+
+
+
+"
+          ></DiscriptionBox>
         </div>
       </div>
     </div>
