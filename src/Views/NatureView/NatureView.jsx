@@ -6,11 +6,13 @@ import Image1 from "../../assets/images/gallery/DJI_0281.jpg";
 import Image2 from "../../assets/images/gallery/7S0A0447.jpg";
 
 import Image3 from "../../assets/images/7S0A0502.jpg";
+import Image4 from "../../assets/images/7S0A0284.jpg";
+import Image5 from "../../assets/images/IMG_7074.jpg";
 
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 
 function NatureView() {
-  const imageUrls = [Image1, Image2, Image3];
+  const imageUrls = [Image1, Image2, Image3, Image4, Image5];
   return (
     <div className="about-wrapper">
       <Header title="" />
