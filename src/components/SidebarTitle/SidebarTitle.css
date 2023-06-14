@@ -2,7 +2,6 @@
     width: 30vw;
     height: 95vh;
     display: flex;
-    flex-direction: column;
 }
 .about-title{
     width: 100%;
