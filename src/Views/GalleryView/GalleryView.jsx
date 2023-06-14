@@ -11,7 +11,7 @@ function GalleryView() {
 <div className="gallery-content">
     <div className="gallery-row">
     <div className="gallery-item">
-      <img src="https://source.unsplash.com/random?people" alt="Image 3" />
+      <img src="https://res.cloudinary.com/dog4gebq2/image/upload/c_thumb,w_200,g_face/v1686753498/mlo2ehsjgjzazsdp2pha.jpg" alt="Image 3" />
     </div>
     <div className="gallery-item">
       <img src="https://source.unsplash.com/random?landscape" alt="Image 3" />
