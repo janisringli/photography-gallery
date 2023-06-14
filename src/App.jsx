@@ -7,6 +7,9 @@ import FlowersView from "./Views/FlowersView/FlowersView.jsx";
 import ImpressumView from "./Views/ImpressumView/ImpressumView.jsx";
 import DatenschutzView from "./Views/DatenschutzView/DatenschutzView.jsx";
 import ServiceView from "./Views/ServiceView/ServiceView.jsx";
+import GalleryView from "./Views/GalleryView/GalleryView.jsx";
+import UploadView from "./Views/UploadView/UploadView.jsx";
+
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
           <Route path="/datenschutz" element={<ImpressumView />} />
           <Route path="/impressum" element={<DatenschutzView />} />
           <Route path="/service" element={<ServiceView />} />
+          <Route path="/gallery" element={<GalleryView />} />
+          <Route path="/upload" element={<UploadView />} />
         </Routes>
       </div>
     </Router>
