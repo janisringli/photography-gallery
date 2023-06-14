@@ -1,0 +1,29 @@
+.gallery-container{
+    overflow: scroll;
+}
+.gallery-content{
+    grid-column-gap: 24px;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.gallery-row{
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    row-gap: 24px;
+}
+.gallery-item{
+    width: 100%;
+}
+.gallery-item img{
+    width: 100%;
+}
+.gallery-flex{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--mainBackground);
+    height: 95vh;
+}
+.fixed{
+    position: fixed;
+}
