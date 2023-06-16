@@ -1,51 +1,76 @@
 import "./UploadView.css";
 import Header from "../../components/Header/Header";
 import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
-import { useState } from "react";
-import axios from 'axios'
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function UploadView() {
-  const [previewSrc, setPreviewSrc] = useState('');
+  const [previewSrc, setPreviewSrc] = useState("");
   const [isImageSelected, setIsImageSelected] = useState(false);
-  const [imageSelected ,setImageSelected] = useState("");
-  const [chosenFormat, setChosenFormat] = useState("")
+  const [imageSelected, setImageSelected] = useState([]);
+  const [selectedFormat, setSelectedFormat] = useState("");
+
+  useEffect(() => {
+    const newFormat = event.target.checked ? "JPG" : "PNG";
+    setSelectedFormat(newFormat);
+  }, []);
+
+  const handleToggle = (event) => {
+    const newFormat = event.target.checked ? "JPG" : "PNG";
+    setSelectedFormat(newFormat);
+    console.log(selectedFormat);
+  };
 
   const handleFileChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    setImageSelected(event.target.files[0])
+    const files = event.target.files;
+    const selectedImages = [];
+    const readers = [];
 
-    reader.onload = (event) => {
-      setPreviewSrc(event.target.result);
-    };
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      selectedImages.push(file);
 
-    reader.readAsDataURL(file);
+      const reader = new FileReader();
+
+      reader.onload = (event) => {
+        // Implement your logic to preview each image if needed
+      };
+
+      reader.readAsDataURL(file);
+      readers.push(reader);
+    }
+
+    setImageSelected(selectedImages);
     setIsImageSelected(true);
   };
 
   const uploadImage = () => {
     console.log("Form submitted!");
     console.log(imageSelected);
-  
-    const formData = new FormData();
-    formData.append("file", imageSelected);
-    //upload for jpg
-    if(chosenFormat == "jpg"){
-    formData.append("upload_preset", "trw55lma");
-    }
-    if(chosenFormat == "png"){
-    formData.append("upload_preset", "trw55lma"); //TODO: Change the upload_preset to one with png
 
-    }
-  
-    axios
-      .post("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload", formData)
-      .then((response) => {
-        console.log(response);
+    const formData = new FormData();
+
+    for (let i = 0; i < imageSelected.length; i++) {
+      formData.append("file", imageSelected[i]);
+      formData.append("cloud_name", "dog4gebq2");
+      if (selectedFormat === "JPG") {
+        formData.append("upload_preset", "jpgEndpoint");
+      } else if (selectedFormat === "PNG") {
+        formData.append("upload_preset", "pngEndpoint");
+      }
+
+      fetch("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload", {
+        method: "POST",
+        body: formData,
       })
-      .catch((error) => {
-        console.error("Upload failed:", error);
-      });
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   return (
@@ -60,19 +85,47 @@ function UploadView() {
               src={previewSrc}
               alt="Preview"
               style={{
-                maxWidth: '200px',
-                maxHeight: '200px',
-                marginBottom: '10px',
+                maxWidth: "200px",
+                maxHeight: "200px",
+                marginBottom: "10px",
               }}
             />
           )}
           <label htmlFor="images" className="drop-container">
             <span className="drop-title">Drop files here</span> or
-            <input type="file" id="images" accept="image/*" required onChange={handleFileChange} />
+            <input
+              type="file"
+              id="images"
+              accept="image/*"
+              multiple="multiple"
+              required
+              onChange={handleFileChange}
+            />
           </label>
-          {isImageSelected && <button onClick={(event) => {
-            uploadImage(event.target.files);
-          }}>Submit</button>}
+          {isImageSelected && (
+            <div className="upload-config">
+              <div className="btn-container">
+                <label className="switch btn-color-mode-switch">
+                  <input
+                    value="1"
+                    id="color_mode"
+                    name="color_mode"
+                    type="checkbox"
+                    onChange={handleToggle}
+                  />
+                  <label
+                    className="btn-color-mode-switch-inner"
+                    data-off="PNG"
+                    data-on="JPG"
+                    htmlFor="color_mode"
+                  ></label>
+                </label>
+              </div>
+              <button onClick={uploadImage}>
+                <span className="button_top">Submit</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
