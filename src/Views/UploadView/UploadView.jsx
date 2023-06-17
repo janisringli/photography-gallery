@@ -49,17 +49,22 @@ function UploadView() {
     console.log(imageSelected);
 
     const formData = new FormData();
-
+/*
     for (let i = 0; i < imageSelected.length; i++) {
       formData.append("file", imageSelected[i]);
       formData.append("cloud_name", "dog4gebq2");
+       // Replace with the desired folder name
       if (selectedFormat === "JPG") {
         formData.append("upload_preset", "jpgEndpoint");
+        formData.append("folder", "gallery/jpg");
+
       } else if (selectedFormat === "PNG") {
         formData.append("upload_preset", "pngEndpoint");
+        formData.append("folder", "gallery/png");
+
       }
 
-      fetch("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload", {
+      fetch("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload/", {
         method: "POST",
         body: formData,
       })
@@ -71,7 +76,51 @@ function UploadView() {
           console.log(err);
         });
     }
-  };
+
+
+  */
+  //if not accepted :)
+
+  for (let i = 0; i < imageSelected.length; i++) {
+    formData.append("file", imageSelected[i]);
+    formData.append("cloud_name", "dog4gebq2");
+    
+      formData.append("upload_preset", "jpgEndpoint");
+      formData.append("folder", "gallery/jpg");
+
+
+    fetch("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload/", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+      console.log("first call complete")
+      formData.append("file", imageSelected[i]);
+  formData.append("cloud_name", "dog4gebq2");
+  formData.append("upload_preset", "pngEndpoint");
+      formData.append("folder", "gallery/png");
+      fetch("https://api.cloudinary.com/v1_1/dog4gebq2/image/upload/", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+      console.log("second call complete")
+  }
+};
+
 
   return (
     <div className="about-wrapper">
@@ -131,5 +180,4 @@ function UploadView() {
     </div>
   );
 }
-
 export default UploadView;
