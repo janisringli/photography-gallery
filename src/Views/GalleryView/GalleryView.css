@@ -6,6 +6,8 @@
     align-items: start;
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .gallery-row{
     display: grid;
@@ -22,8 +24,11 @@
     display: flex;
     flex-direction: row;
     background-color: var(--mainBackground);
-    height: 95vh;
+    height: 100vh;
 }
 .fixed{
     position: fixed;
+}
+.fullsize-container{
+    display: none;
 }
