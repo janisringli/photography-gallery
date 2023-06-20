@@ -49,7 +49,7 @@ function UploadView() {
     console.log(imageSelected);
 
     const formData = new FormData();
-/*
+
     for (let i = 0; i < imageSelected.length; i++) {
       formData.append("file", imageSelected[i]);
       formData.append("cloud_name", "dog4gebq2");
@@ -78,7 +78,8 @@ function UploadView() {
     }
 
 
-  */
+ 
+ /*
   //if not accepted :)
 
   for (let i = 0; i < imageSelected.length; i++) {
@@ -119,8 +120,9 @@ function UploadView() {
       });
       console.log("second call complete")
   }
+  */
 };
-
+ 
 
   return (
     <div className="about-wrapper">

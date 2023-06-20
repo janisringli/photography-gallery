@@ -3,9 +3,13 @@ import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
 import "./GalleryView.css";
 import { useState,useRef, useEffect } from "react";
 import FullsizeView from "../../Views/FullsizeView/FullsizeView.jsx"
+import axios from "axios";
+
+
 
 function GalleryView() {
   const [imageUrl, setImageUrl] = useState("")
+  const [images, setImages] = useState([])
   const FullsizeWrapperRef = useRef(null);
   
    function openFullsize(event)  {
@@ -15,8 +19,34 @@ function GalleryView() {
 
     FullsizeWrapperRef.current.style.display =  "block"
     
-  }
   
+  }
+
+  useEffect(() => {
+    axios.get("https://api.cloudinary.com/v1_1/dog4gebq2/resources/image?type=upload&prefix=gallery/jpg/&max_results=500", {
+      headers: {
+        'Authorization': 'Basic ' + btoa('969362856889454:lq5qF3_7xCHS1cesbf9xf1ZkdPk')
+      },
+    })
+
+
+    .then((res) => {
+      console.log(res.data.resources);
+      setImages(res.data.resources)
+      for (let i = 0; i < res.data.resources.length; i++) {
+        console.log(res.data.resources[i].secure_url);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }, []);
+
+
+  const numColumns = 3; // Number of columns
+
+
+
   return (
     <div className="gallery-flex">
     
@@ -26,84 +56,43 @@ function GalleryView() {
   <FullsizeView imageUrl={imageUrl} FullsizeWrapperRef={FullsizeWrapperRef} />
 
 <div className="gallery-content">
-    <div className="gallery-row">
-    <div className="gallery-item" >
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950442/gallery/jpg/o192rvxratsy2ch67xcr.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img  onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950445/gallery/jpg/wsqvqu1ukreggmu7rzes.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950442/gallery/jpg/lyf5tyfaxojthzykc2l0.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019028/gallery/jpg/bprf6oo7bpsmgtw5vnhj.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019428/gallery/jpg/ojzunbitu2rxkaptywrw.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020152/gallery/jpg/zvisakzdgwdpxzlvejwy.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020111/gallery/jpg/mfwvvws7hpfq1eb30bkc.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020106/gallery/jpg/d62so7x3z1kpvpjv9ggg.jpg" alt="Image 3" />
-    </div>
 
-    </div>
-    <div className="gallery-row">
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950272/gallery/jpg/zvwxqhf7n5udzaqiajwt.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950444/gallery/jpg/it9rcwxuthqhlntstkce.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950442/gallery/jpg/xpaixo74zdjhsxmozvlg.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019029/gallery/jpg/xdwzkiic373joqmk4tox.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019428/gallery/jpg/uvdhwkrgz0h68vzfbyx6.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019417/gallery/jpg/xaxk2csctiocxjwkxu1p.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020109/gallery/jpg/nojodx5pvhlk59rzybuq.jpg" alt="Image 3" />
-    </div>
 
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020412/gallery/jpg/akh96w660uyqmcmpbop1.jpg" alt="Image 3" />
-    </div>
-    </div>
-    <div className="gallery-row">
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950067/gallery/jpg/qzcdztcnw1iwhmgtqpph.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1686950443/gallery/jpg/ed43bdidtb68vyvb2mfe.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019029/gallery/jpg/scz7ko5uij86rexhtygu.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019426/gallery/jpg/zkxqbx4eiamijjtij4d5.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687019424/gallery/jpg/ydidgbclh9ezewwmitpu.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020114/gallery/jpg/udzahed4qfx2yvn8fw8t.jpg" alt="Image 3" />
-    </div>
-    <div className="gallery-item">
-      <img onClick={openFullsize} src="https://res.cloudinary.com/dog4gebq2/image/upload/v1687020107/gallery/jpg/uqc8zy15eetkzwau3htu.jpg" alt="Image 3" />
-    </div>
 
-    </div>
+
+
+{Array.from({ length: numColumns }, (_, columnIndex) => (
+  <div className="gallery-row" key={columnIndex}>
+    
+    {images.map((image, index) => {
+      console.log(image)
+      let thumbnailUrl = image.secure_url.replace("/upload","/upload/c_thumb,w_400");
+
+      //First Column is copyrighted
+      if(index % 3 === 0){
+        thumbnailUrl = image.secure_url.replace("/upload","/upload/b_rgb:000000,c_limit,h_200,o_90,w_400/ar_1:1,b_rgb:000000,c_lfill,co_rgb:ffffff,l_text:arial_80:®,o_60,r_max");
+        console.log(thumbnailUrl)
+      }
+      if (index % numColumns !== columnIndex){
+       return null;
+      };
+      
+      return (
+        <div className="gallery-item" key={index}>
+          <img
+            src={thumbnailUrl}
+            alt={image.public_id}
+            onClick={openFullsize}
+          />
+        </div>
+      );
+    })}
+  </div>
+))}
+    
+
+  
+
 </div>
   </div>
   </div>

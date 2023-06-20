@@ -32,3 +32,6 @@
 .fullsize-container{
     display: none;
 }
+.gallery-item:hover{
+    cursor: pointer;
+}
