@@ -18,14 +18,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<AboutView />} />
           <Route path="/" element={<HomeView />} />
-          <Route path="/photogallery" element={<PhotoGalleryView />} />
-          <Route path="/photo/nature/" element={<NatureView />} />
-          <Route path="/photo/flowers/" element={<FlowersView />} />
-          <Route path="/datenschutz" element={<ImpressumView />} />
-          <Route path="/impressum" element={<DatenschutzView />} />
-          <Route path="/service" element={<ServiceView />} />
           <Route path="/gallery" element={<GalleryView />} />
-          <Route path="/upload" element={<UploadView />} />
         </Routes>
       </div>
     </Router>

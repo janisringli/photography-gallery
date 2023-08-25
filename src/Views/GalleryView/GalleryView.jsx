@@ -25,7 +25,8 @@ function GalleryView() {
   useEffect(() => {
     axios.get("https://api.cloudinary.com/v1_1/dog4gebq2/resources/image?type=upload&prefix=gallery/jpg/&max_results=500", {
       headers: {
-        'Authorization': 'Basic ' + btoa('969362856889454:lq5qF3_7xCHS1cesbf9xf1ZkdPk')
+        'Authorization': 'Basic ' + btoa(`${import.meta.env.VITE_APP_CLOUDINARY_API_KEY}:${import.meta.env.VITE_APP_CLOUDINARY_API_SECRET}`)
+        
       },
     })
 
