@@ -1,0 +1,24 @@
+.FullsizeView-container{
+    display: none;
+    width: 100svw;
+    width: 100vw;
+    height: 100svh;
+    height: 100vh;
+    z-index: 99;
+  backdrop-filter: brightness(10%);
+  -webkit-backdrop-filter: brightness(10%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.fullsize-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.fullsize-image{
+    width: auto;
+    height: 70vh;
+}

@@ -1,46 +1,47 @@
-.category-container{
-    color: var(--mainBackground);
-    height: 95vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
+.category-container {
+  color: var(--mainBackground);
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
 }
-
-.category-overlay{
-    width: 100%;
-    height: 95vh;
-    background-color: var(--mainBackground);
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.PhotoGalleryView-container {
+  background-color: var(--mainBackground);
 }
-.category-thumbnail{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
+.category-overlay {
+  width: 100%;
+  height: 95vh;
+  background-color: var(--mainBackground);
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
-.category-overlay:hover{
-    cursor: pointer;
-   background-color: transparent;
-   transition: 1s;
+.category-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
-.category-overlay:not(:hover){
-    cursor: pointer;
-   background-color: var(--mainBackground);
-   transition: 0.5s;
+.category-overlay:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
 }
-.category-content{
-    position: relative;
+.category-overlay:not(:hover) {
+  cursor: pointer;
+  background-color: var(--mainBackground);
+  transition: 0.5s;
 }
-.overlay-title{
-    width: 100%;
-    text-align: center;
-    font-size: 72px;
-   mix-blend-mode:difference;
-   padding-top: 10vh;
-
+.category-content {
+  position: relative;
+}
+.overlay-title {
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  mix-blend-mode: difference;
+  padding-top: 10vh;
 }

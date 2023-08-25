@@ -3,8 +3,7 @@ import Header from "../../components/Header/Header";
 import ImageThumbnail from "../../assets/images/7S0A0871.jpg";
 import ImageThumbnailFlowers from "../../assets/images/7S0A0904.jpg";
 import ImageThumbnailStreets from "../../assets/images/7S0A0502.jpg";
-
-
+import ImageThumbnailPeople from "../../assets/images/7S0A0579.jpg";
 
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +25,7 @@ function PhotoGalleryView() {
 
   return (
     <div className="PhotoGalleryView-container">
-      <Header />
+      <Header title="Gallery" />
       <div className="PhotoGalleryView-content">
         <div className="category-container">
           <div className="category-content">
@@ -40,10 +39,13 @@ function PhotoGalleryView() {
           <div className="category-content" onClick={goToFlowers}>
             <div className="category-overlay">
               <div className="overlay-content">
-                <div className="overlay-title">Flowers</div>
+                <div className="overlay-title">Areal</div>
               </div>
             </div>
-            <img className="category-thumbnail" src={ImageThumbnailFlowers}></img>
+            <img
+              className="category-thumbnail"
+              src={ImageThumbnailFlowers}
+            ></img>
           </div>
           <div className="category-content">
             <div className="category-overlay">
@@ -51,15 +53,21 @@ function PhotoGalleryView() {
                 <div className="overlay-title">Streets</div>
               </div>
             </div>
-            <img className="category-thumbnail" src={ImageThumbnailStreets}></img>
+            <img
+              className="category-thumbnail"
+              src={ImageThumbnailStreets}
+            ></img>
           </div>
           <div className="category-content">
             <div className="category-overlay">
               <div className="overlay-content">
-                <div className="overlay-title">Nature</div>
+                <div className="overlay-title">People</div>
               </div>
             </div>
-            <img className="category-thumbnail" src={ImageThumbnail}></img>
+            <img
+              className="category-thumbnail"
+              src={ImageThumbnailPeople}
+            ></img>
           </div>
         </div>
       </div>

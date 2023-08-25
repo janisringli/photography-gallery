@@ -8,12 +8,12 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
     flyout.style.display = "none";
   }
 
-  document.onkeydown = function(evt) {
+  document.onkeydown = function (evt) {
     evt = evt || window.event;
     if (evt.key === "Escape") {
-        closeFlyout()
+      closeFlyout();
     }
-};
+  };
 
   return (
     <div className="menuFlyout-wrapper" ref={menuFlyoutWrapperRef}>
@@ -21,14 +21,24 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
         <div className="menuFlyout-content">
           <ul className="nav-content">
             <li className="nav-item">
-              
               <a href="/">Home</a>
             </li>
             <li className="nav-item">
               <a href="/about">About</a>
             </li>
             {/* <li className="nav-item">Projects</li> */}
-            {/* <li className="nav-item"><a href="/photogallery">Photography</a></li> */}
+            <li className="nav-item">
+              <a href="/photogallery">Photography</a>
+            </li>
+            <li className="nav-item">
+              <a href="/service">Services</a>
+            </li>
+            <li className="nav-item">
+              <a href="/gallery">Gallery</a>
+            </li>
+            <li className="nav-item">
+              <a href="/upload">Upload</a>
+            </li>
           </ul>
           <div className="flyout-sidebar">
             <img
@@ -56,6 +66,15 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
                   <a href="mailto:j@nisringli">j@nisringli.ch</a>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div className="flyout-footer">
+            <div className="footer-item">Copyright 2023</div>
+            <div className="footer-item">
+              <a href="/impressum">Impressum</a>
+            </div>
+            <div className="footer-item">
+              <a href="/datenschutz">Datenschutz</a>
             </div>
           </div>
         </div>
