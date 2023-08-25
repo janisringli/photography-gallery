@@ -28,17 +28,9 @@ function MenuFlyout({ menuFlyoutWrapperRef }) {
             </li>
             {/* <li className="nav-item">Projects</li> */}
             <li className="nav-item">
-              <a href="/photogallery">Photography</a>
-            </li>
-            <li className="nav-item">
-              <a href="/service">Services</a>
-            </li>
-            <li className="nav-item">
               <a href="/gallery">Gallery</a>
             </li>
-            <li className="nav-item">
-              <a href="/upload">Upload</a>
-            </li>
+            
           </ul>
           <div className="flyout-sidebar">
             <img
