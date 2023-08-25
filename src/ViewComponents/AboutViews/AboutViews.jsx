@@ -1,4 +1,4 @@
-import "./AboutView.css";
+import "./AboutViews.css";
 import Header from "../../components/Header/Header";
 import githubIcon from "../../assets/svg/github.svg";
 import instaIcon from "../../assets/svg/instagram.svg";
