@@ -1,4 +1,4 @@
-import "./SidebarTitle.css"
+import "./AnnoyingTitle.css"
 function SidebarTitle(props){
     return (
         <div className="title-section">

@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
+import SidebarTitle from "../../components/AnnoyingTitle/AnnoyingTitle";
 import "./GalleryView.css";
 import { useState,useRef, useEffect } from "react";
 import FullsizeView from "../FullsizeView/FullsizeView.jsx"
