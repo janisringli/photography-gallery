@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomeView from "./viewComponents/HomeView/HomeView.jsx";
-import AboutView from "./viewComponents/AboutView/AboutView.jsx";
-import ImpressumView from "./viewComponents/ImpressumView/ImpressumView.jsx";
-import DatenschutzView from "./viewComponents/DatenschutzView/DatenschutzView.jsx";
-import GalleryView from "./viewComponents/GalleryView/GalleryView.jsx";
+import HomeView from "./viewComponents/HomeView/HomeView";
+import AboutView from "./viewComponents/AboutView/AboutView";
+import ImpressumView from "./viewComponents/ImpressumView/ImpressumView";
+import DatenschutzView from "./viewComponents/DatenschutzView/DatenschutzView";
+import GalleryView from "./viewComponents/GalleryView/GalleryView";
 
 
 function App() {
