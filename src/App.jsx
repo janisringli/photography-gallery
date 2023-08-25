@@ -1,10 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeView from "./Views/HomeView/HomeView.jsx";
 import AboutView from "./Views/AboutView/AboutView.jsx";
-import PhotoGalleryView from "./Views/PhotoGalleryView/PhotoGalleryView.jsx";
 import ImpressumView from "./Views/ImpressumView/ImpressumView.jsx";
 import DatenschutzView from "./Views/DatenschutzView/DatenschutzView.jsx";
-import ServiceView from "./Views/ServiceView/ServiceView.jsx";
 import GalleryView from "./Views/GalleryView/GalleryView.jsx";
 
 
