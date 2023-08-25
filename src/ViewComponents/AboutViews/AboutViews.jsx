@@ -5,7 +5,7 @@ import instaIcon from "../../assets/svg/instagram.svg";
 import unsplashIcon from "../../assets/svg/unsplash.svg";
 import janis2 from "../../assets/images/janis2.jpg";
 import mailIcon from "../../assets/svg/mail.svg";
-import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
+// import SidebarTitle from "../../components/SideBarTitle/SideBarTitle";
 import DiscriptionBox from "../../components/DiscriptionBox/DiscriptionBox";
 
 function AboutView() {
