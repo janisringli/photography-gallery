@@ -2,7 +2,7 @@ import "./HomeView.css";
 import Header from "../../components/Header/Header.jsx";
 import janis from "../../assets/images/janis1.jpg";
 
-function HomeView() {
+function HomeViews() {
   return (
     <div className="homeView-container">
       <Header title="Home" />
@@ -19,4 +19,4 @@ function HomeView() {
   );
 }
 
-export default HomeView;
+export default HomeViews;
