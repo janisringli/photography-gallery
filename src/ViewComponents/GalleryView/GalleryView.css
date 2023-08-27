@@ -9,13 +9,17 @@
     padding-left: 200px;
     padding-right: 200px;
 }
+.gallery-column{
+}
 .gallery-row{
     display: grid;
     grid-template-columns: minmax(0,1fr);
     row-gap: 24px;
 }
 .gallery-item{
+    padding-bottom: 24px;
     width: 100%;
+
 }
 .gallery-item img{
     width: 100%;
