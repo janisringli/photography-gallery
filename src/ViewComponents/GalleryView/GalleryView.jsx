@@ -55,7 +55,7 @@ function GalleryView() {
               {columnImages.map((image, index) => (
                 <div className="gallery-item" key={index}>
                   <img
-                    src={image.attributes.url}
+                    src={image.attributes.formats.medium.url}
                     alt={image.public_id}
                     onClick={() => openFullsize(image)}
                   />
