@@ -73,7 +73,7 @@ function GalleryView() {
                 <div className="gallery-item" key={index}>
                   <img
                     src={image.attributes.formats.medium.url}
-                    alt={image.public_id}
+                    alt={image.attributes.alternativeText}
                     onClick={() => openFullsize(image)}
                   />
                 </div>
