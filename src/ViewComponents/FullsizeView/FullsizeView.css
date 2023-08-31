@@ -1,24 +1,31 @@
-.FullsizeView-container{
-    display: none;
-    width: 100svw;
-    width: 100vw;
-    height: 100svh;
-    height: 100vh;
-    z-index: 99;
+.FullsizeView-container {
+  display: none;
+  width: 100svw;
+  width: 100vw;
+  height: 100svh;
+  height: 100vh;
+  z-index: 99;
   backdrop-filter: brightness(10%);
   -webkit-backdrop-filter: brightness(10%);
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
-.fullsize-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+.fullsize-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
-.fullsize-image{
-    width: auto;
-    height: 70vh;
+.fullsize-image {
+  width: auto;
+  height: 70vh;
+}
+
+@media (max-width: 400px) {
+  .fullsize-image {
+    width: 350px;
+    height: auto;
+  }
 }
