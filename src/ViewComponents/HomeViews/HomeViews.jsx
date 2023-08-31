@@ -11,7 +11,7 @@ function HomeViews() {
           <div className="greeting">
             <p className="image-overlap">Hello there,</p>I'm Janis Ring
             <span className="image-overlap">li</span>
-            <img className="intro-photo" src={janis} alt="" />
+            <img className="intro-photo" src={janis} alt="A Portrait of Janis Ringli" />
           </div>
         </div>
       </div>
