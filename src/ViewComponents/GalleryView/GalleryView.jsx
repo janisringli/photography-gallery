@@ -18,9 +18,13 @@ function GalleryView() {
     if (width <= 400) {
       setRows(1);
     }
-    if (width > 400 && width <= 600) {
+    if (width > 400 && width <= 700) {
       setRows(2);
     }
+    if (width > 700) {
+      setRows(3);
+    }
+    
   }
 
   useEffect(() => {

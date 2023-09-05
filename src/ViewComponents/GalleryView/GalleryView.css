@@ -38,14 +38,38 @@
 .gallery-item:hover {
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  .gallery-content {
+    grid-column-gap: 24px;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .gallery-content {
+    grid-column-gap: 24px;
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .gallery-content {
     grid-column-gap: 24px;
     align-items: start;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
+
+
