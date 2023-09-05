@@ -74,7 +74,7 @@
 @media only screen and (max-width: 400px) {
     .footer{
         position: fixed;
-        bottom: 70px;
+        bottom: 40px;
         width: 100vw;
     }
 }
